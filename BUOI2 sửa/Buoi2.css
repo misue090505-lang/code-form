@@ -1,0 +1,436 @@
+* {
+    margin: 0; /* Reset margin mặc định của tất cả phần tử */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===== SHARED: Section title ===== */
+.section-title {
+    display: inline-block;
+    
+    color: darkgreen;
+    text-transform: uppercase;
+    border-bottom: 2px solid green;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* ===== SHARED: Tab pill list ===== */
+ul.tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+}
+
+ul.tab li {
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #666;
+    background: #f4f4f4;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ul.tab li:hover {
+    background: #e0e0e0;
+}
+
+/* ===== SHARED: Image wrapper với overlay text ===== */
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay text đè lên ảnh (dùng cho block_new) */
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 10px 10px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+}
+
+.img-overlay h4 {
+    font-size: 15px;
+    color: #fff;
+    margin: 0 0 5px 0;
+    line-height: 1.4;
+}
+
+.img-overlay p {
+    font-size: 12px;
+    color: #ddd;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* ===== SHARED: Article title & desc (dùng bên ngoài overlay) ===== */
+.article-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #222;
+    margin: 10px 0 6px;
+    line-height: 1.4;
+}
+
+.article-desc {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* ===== SHARED: Danh sách tin nhỏ ===== */
+ul.list_more {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list_more li {
+    display: block;
+    border-top: 1px solid #e8e8e8;
+    padding: 9px 0;
+    font-size: 13px;
+    color: #333;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+ul.list_more li:hover {
+    color: green;
+}
+
+/* ===== CONTAINER: Hàng 1 (xe máy + ô tô + aside) ===== */
+.container {
+    width: 100%;
+    max-width: 1090px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Khối tin tức (2 cột: xe máy + ô tô) */
+.block_new {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* Mỗi cột trong block_new */
+.block_new_col {
+    min-width: 0;
+}
+
+/* ===== ASIDE ===== */
+.aside {
+    min-width: 0;
+}
+
+.aside-title {
+    font-size: 15px;
+    color: #fff;
+    background: hotpink;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(245, 8, 99);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.aside img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.aside-text {
+    font-size: 13px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.aside-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.aside-list li {
+    border-top: 1px solid #e8e8e8;
+    padding: 8px 0;
+    font-size: 13px;
+    color: #333;
+    cursor: pointer;
+}
+
+.aside-list li:hover {
+    color: green;
+}
+/* ===== BANNER QUẢNG CÁO ===== */
+.ads_banner {
+    width: 100%;
+}
+.ads_banner_full {
+    width: 100%;
+    max-width: 1090px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+
+.ads_banner img,
+.ads_banner_full img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* ===== BOTTOM: 4 cột bằng nhau ===== */
+.bottom {
+    width: 100%;
+    max-width: 1090px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.bottom-col {
+    min-width: 0;
+}
+
+.bottom-col .img-wrapper img {
+    height: 180px;
+}
+
+.multimedia-wrapper {
+    max-width: 1090px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* khoảng cách giữa 24h Shorts và Multimedia */
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #d8f0c8, #a8c9e6);
+}
+.menu h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #5ca038; /* xanh  */
+}
+.menu-list {
+    display: flex;
+    gap: 10px;
+}
+.menu-list span {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #7cb342;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #d8f0c8, #a8c9e6);
+}
+.top h2 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #5ca038;
+}
+.multimedia {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #eee; /* Đường viền mờ nếu cần */
+    padding: 10px; /* Khoảng đệm bên trong */
+}
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+.tabs span {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #7cb342;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 300px;
+}
+.card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    color: white;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0)
+    );
+}
+
+.card-content p {
+    margin: 0;
+    font-weight: bold;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.body {
+    display: flex;
+    gap: 20px;
+}
+
+.left {
+    width: 65%;
+}
+
+.right {
+    width: 35%;
+}
+
+.item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.thumb {
+    position: relative;
+}
+.main-video {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.main-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* ===== THÔNG TIN DOANH NGHIỆP ===== */
+.business-info {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:rgb(208, 204, 204); 
+    font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề có thanh đứng màu xanh */
+.info-header {
+    margin-bottom: 20px;
+}
+
+.info-header h2 {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 15px; /* Khoảng cách giữa chữ và thanh đứng */
+    border-left: 4px solid #7cb342; /* Thanh đứng màu xanh lá */
+    line-height: 1;
+    margin: 0;
+}
+
+/* Dàn 4 cột sử dụng Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia đều 4 cột */
+    gap: 20px; /* Khoảng cách giữa các bài viết */
+}
+
+/* Từng bài viết nhỏ */
+.info-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; 
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+    
+}

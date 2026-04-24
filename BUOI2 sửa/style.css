@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1090px;
+    
+    justify-content: space-between; /* Phân chia không gian giữa các phần tử con */
+
+}
+
+
+.block_new{
+    width: 730px;
+    float: left;
+}
+.asside {
+    width: 300px;
+    float: right;
+}
+
+/*-- sửa chữ pháp luật --*/
+.block_new_left {
+    float: left;
+    width: 351px; /* Đảm bảo không vượt quá tổng 100% khi cộng với margin */
+    vertical-align: top; /* Căn chỉnh phần tử theo cạnh trên */
+    /* margin-right: 2%; Khoảng cách giữa các khối */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+
+    
+}
+.block_new_right {
+    float: right;
+}
+.block_new_left h3{
+    width: 100%;
+    display: inline-block;
+    color: darkgreen;
+    text-transform: uppercase;/*-- viết hoa--*/
+    border-bottom: 1px solid green;
+    padding-bottom: 10px;
+}
+/*-- canh chỉnh 2 div nhỏ để đủ chia đôi --*/
+ul.tab {
+    display: flex;      /* Cho các li nằm ngang */
+    gap: 10px;          /* Khoảng cách giữa các thẻ */
+    padding: 0;
+    margin: 10px 0;
+    list-style: none;   /* Bỏ dấu • */
+}
+
+ul.tab li {
+    padding: 5px 12px;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    display: inline-block;
+    white-space: nowrap;  /* Không xuống dòng */
+}
+.block_new_left img{
+    width: 100%;
+    height: 200px;
+}
+.block_new_left h4{
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+}
+.list_more{
+    display: inline-block;
+    width: 100%;
+    margin:15px 0;
+}
+.list_more li{
+    display:inline-block ;
+    width: 100%;
+    border-top: 1px solid gray;
+    padding: 10px 0;
+}
+.thoi_trang  {
+    float: left;
+    width: 351px; /* Đảm bảo không vượt quá tổng 100% khi cộng với margin */
+    vertical-align: top; /* Căn chỉnh phần tử theo cạnh trên */
+    /* margin-right: 2%; Khoảng cách giữa các khối */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+
+}
+.thoi_trang h3{
+    width: 100%;
+    display: inline-block;
+    color: darkgreen;
+    text-transform: uppercase;/*-- viết hoa--*/
+    border-bottom: 1px solid green;
+    padding-bottom: 10px;
+}
+ul.tieu_de_1 {
+    width: 100%;
+    display:inline-block;
+    text-align: left;
+    margin: 10px 0;
+}
+ul.tieu_de_1 li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    background-color: gray;
+    border-radius:10px ;
+}
+.thoi_trang img{
+    width: 100%;
+    height: 200px;
+}
+ul.tieu_de_2 {
+    display: inline-block;
+    width: 100%;
+    margin:15px 0;
+}
+ul.tieu_de_2 li{
+    display:inline-block ;
+    width: 100%;
+    border-top: 1px solid gray;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.cntt{ 
+    width: 351px; /* Đảm bảo không vượt quá tổng 100% khi cộng với margin */
+    vertical-align: top; /* Căn chỉnh phần tử theo cạnh trên */
+    /* margin-right: 2%; Khoảng cách giữa các khối */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+}
+.cntt h3{
+    width: 100%;
+    display: inline-block;
+    color: darkgreen;
+    text-transform: uppercase;/*-- viết hoa--*/
+    border-bottom: 1px solid green;
+    padding-bottom: 10px;
+}
+ul.tieu_de_3 {
+    width: 100%;
+    display:inline-block;
+    text-align: left;
+    margin: 10px 0;
+}
+ul.tieu_de_3 li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    background-color: gray;
+    border-radius:10px ;
+}
+.cntt img{
+    width: 100%;
+    height: 200px;
+}
+ul.tieu_de_4{
+    display: inline-block;
+    width: 100%;
+    margin:15px 0;
+}
+ul.tieu_de_4 li{
+    display:inline-block ;
+    width: 100%;
+    border-top: 1px solid gray;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.cntt h4 {
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+}
+.cntt{
+    
+        float: right;
+}
+
+.duLich {
+    width: 100%;
+    background-color: brown;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.duLich h4 {
+    width: 100%;
+    display: inline-block;
+    font-size: 24px; /* Đặt kích thước chữ lớn hơn */
+    font-weight: bold; /* Tùy chọn: Làm chữ đậm hơn */
+    text-transform: uppercase; /* Tùy chọn: Chuyển đổi chữ thành chữ in hoa */
+    margin-bottom: 20px;
+}
+
+
+.dulich_content{
+    width: 100%;
+    display: inline-block;
+}
+.dulich_left {
+    width:350px ;
+    float: left;
+}
+.dulich_content img {
+    width: 100%;
+}
+ul.dulich_right {
+    width: 350px;
+    float:right;
+}
+
+ul.dulich_right li {
+    display: flex;
+    align-items: flex-start; /* Căn văn bản bắt đầu từ trên cùng của ảnh */
+    gap: 10px; /* Tạo khoảng cách giữa ảnh và văn bản */
+    margin-bottom: 15px;
+}
+
+ul.dulich_right li img {
+    width: 120px;
+    height: auto;
+    margin: 0; /* Đảm bảo ảnh không có margin làm đẩy văn bản */
+}
+
+ul.dulich_right li p {
+    margin: 0; /* Loại bỏ khoảng cách mặc định của văn bản */
+    padding: 0; /* Đảm bảo không có padding thừa */
+    white-space: normal; /* Văn bản xuống dòng khi cần */
+}
+.content {
+    
+    
+        background-color: aquamarine; /* Màu nền của div content */
+        width: 100%; /* Chiếm toàn bộ chiều rộng */
+        display: inline-block; /* Hiển thị inline-block */
+        margin: 20px 0; /* Tạo khoảng cách trên và dưới */
+    }
+ul.block1 {
+    padding: 10px 0;
+}
+ul.block_1 li {
+    display: inline-block; /* Đặt các <li> hiển thị ngang */
+    margin: 0 10px; /* Thêm khoảng cách ngang giữa các mục */
+    padding: 5px 10px; /* Thêm padding cho thẻ <li> */
+    background-color: gray;
+    border-radius:10px;
+}
+ul.block_1 li.khong_mau {
+    background-color: transparent; /* Nền trong suốt */
+    color: black; /* Đặt màu chữ nếu cần */
+}
+.sum_left {
+    width:350px ;
+    float: left;
+    margin-right: 20px;
+}
+.sum {
+    width: 100%;
+    display: inline-block;
+}
+.sum img {
+    width: 100%;
+}
+ul.sum_right {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các mục ngang hàng */
+    flex-direction: column; /* Đặt các mục theo chiều dọc */
+    gap: 10px; /* Tạo khoảng cách giữa các mục */
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Bỏ dấu chấm của <ul> */
+}
+
+ul.sum_right li {
+    display: flex; /* Sử dụng Flexbox để canh ngang */
+    align-items: flex-start; /* Căn nội dung về phía trên cùng */
+    gap: 10px; /* Khoảng cách giữa ảnh và văn bản */
+    margin-bottom: 10px; /* Khoảng cách giữa các mục trong danh sách */
+}
+
+ul.sum_right img {
+    width: 120px; /* Chiều rộng cố định cho ảnh */
+    height: auto; /* Đảm bảo ảnh không bị méo */
+}
+
+ul.sum_right p {
+    margin: 0; /* Loại bỏ khoảng cách mặc định của thẻ <p> */
+}
+.container img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.asside_content {
+    width: 100%;
+    display: inline-block;
+    background-color: deeppink;
+    font-size: 24px; /* Đặt kích thước chữ lớn hơn */
+    font-weight: bold; /* làm chữ đậm hơn */
+    margin-bottom: 20px
+}
+.main_content {
+    display: flex; /* Kích hoạt flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 10px; /* Tạo khoảng cách giữa các phần tử */
+    align-items: flex-start;/* Đặt các phần tử con thẳng hàng ở đầu */
+}
+
+.main_content img {
+    width: 150px; /* Đặt chiều rộng cho ảnh để không quá to */
+    height: auto; /* Đảm bảo tỉ lệ ảnh không bị bóp méo */
+}
+
+.main_content p {
+    flex: 1; /* Cho phép đoạn văn chiếm phần còn lại của hàng */
+    margin: 0; /* Loại bỏ margin mặc định của đoạn văn */
+}
+h4 {
+    align-self: flex-start; /* Đảm bảo thẻ <h4> nằm ở đầu (trái hoặc trên cùng) */   
+   margin-bottom: 20px; /* Tạo khoảng cách 20px ở tất cả các phía */
+    
+}
+.last {
+        width: 100%;
+        border: 2px solid #ccc; /* Thêm khung xung quanh div */
+        background-color: antiquewhite; /* Màu nền là antiquewhite */
+        padding: 20px; /* Khoảng cách bên trong khung */
+        box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng thể */
+         /* Khoảng cách dưới là 20px */
+        display:inline-block;
+        margin-bottom: 30px;
+    }
+    
+
+
+ul.main_last {
+    list-style-type: none; /* Xóa ký hiệu đầu dòng */
+    display: flex; /* Sử dụng flexbox */
+    gap: 10px; /* Khoảng cách giữa các ảnh là 10px */
+    padding: 0 10px; /* Thụt vào đầu và cuối 10px */
+    margin: 0; /* Xóa khoảng cách mặc định */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    max-width:100%; /* Giới hạn chiều rộng tối đa là 1090px */
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+ul.main_last li {
+    text-align: center; /* Căn giữa nội dung */
+    flex-shrink: 0; /* Đảm bảo các mục không co lại */
+    width: 242px;
+    height: 162px;
+    margin-bottom: 30px;
+}
+
+ul.main_last img {
+    width: 242px; /* Chiều rộng cố định của ảnh */
+    height: 162px; /* Chiều cao cố định */
+    object-fit: cover; /* Đảm bảo ảnh giữ tỷ lệ */
+}
+.tong {
+    width: 100%;
+}
+.tong_con {
+    width: 100%;
+    margin-bottom: 30px;
+}
+ul.coment {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    list-style-type: none;
+    gap: 15px;            /* Tạo khoảng cách giữa các mục */
+    padding: 0;           /* Xóa padding mặc định */
+    margin: 0;
+    margin-bottom: 30px;
+}
+.coment li:not(:last-child)::after {
+    content: " | ";       /* Thêm dấu gạch đứng */
+    margin-left: 5px;     /* Khoảng cách trước gạch đứng */
+    margin-right: 5px;    /* Khoảng cách sau gạch đứng */
+}
+.tong_con {
+    border-top: 2px solid #000; /* Đường kẻ trên */
+    border-bottom: 2px solid #000; /* Đường kẻ dưới */
+    padding: 10px 0; /* Khoảng cách giữa nội dung và đường kẻ */
+    margin: 20px 0; /* Khoảng cách bên ngoài cho bố cục */
+}
+
+ul.coment {
+    list-style-type: none; /* Xóa ký hiệu đầu dòng */
+    margin: 0; /* Xóa margin mặc định */
+    padding: 0; /* Xóa padding mặc định */
+    display: flex; /* Dùng flexbox để sắp xếp ngang */
+    gap: 15px; /* Khoảng cách giữa các mục */
+    justify-content: center; /* Căn giữa các mục */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+ul.coment li {
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* In đậm */
+    padding: 5px 10px; /* Khoảng cách bên trong mỗi mục */
+   /* Con trỏ chuột khi hover */
+}
+.tong_left {
+    float: left;
+    width: 545px;
+    margin-bottom: 20px; /* Khoảng cách dưới của toàn bộ block */
+}
+
+.tong_left h5 {
+    font-size: 18px; /* Kích thước chữ */
+    font-weight: bold; /* In đậm chữ */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ */
+}
+
+.tong_left p {
+    margin-bottom: 10px; /* Khoảng cách dưới mỗi đoạn văn */
+    font-size: 14px; /* Kích thước chữ */
+    line-height: 1.5; /* Tăng khoảng cách giữa các dòng trong đoạn */
+    color: #555; /* Màu chữ nhẹ hơn */
+}
+.tong_right {
+    float: right;
+    width: 545px;
+    margin-bottom: 20px; /* Khoảng cách dưới của toàn bộ block */
+}
+
+.tong_right h5 {
+    font-size: 18px; /* Kích thước chữ */
+    font-weight: bold; /* In đậm chữ */
+    margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+    color: #333; /* Màu chữ */
+}
+
+.tong_right p {
+    margin-bottom: 10px; /* Khoảng cách dưới mỗi đoạn văn */
+    font-size: 14px; /* Kích thước chữ */
+    line-height: 1.5; /* Tăng khoảng cách giữa các dòng trong đoạn */
+    color: #555; /* Màu chữ nhẹ hơn */
+}
+
+
+.tong_right img {
+    width: 88px;
+    height: 42;
+}
+/* Chuyển các <li> thành một dòng ngang */
+.tong_bottom {
+    list-style-type: none; /* Xóa dấu chấm mặc định */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Đặt các phần tử trong <ul> thành dòng ngang */
+    clear: both;
+}
+
+  /* Thiết lập kiểu cho các <li> */
+.tong_bottom li {
+    margin-right: 20px; /* Khoảng cách giữa các phần tử */
+}
+  /* Cấu hình cho phần tử có class .special */
+.special {
+    border: 2px solid #0099cc; /* Đặt khung viền cho .special */
+    color: #0099cc; /* Màu chữ xanh */
+    padding: 5px 10px; /* Thêm padding cho phần tử .special */
+    border-radius: 5px; /* Thêm góc bo tròn cho khung viền */
+}

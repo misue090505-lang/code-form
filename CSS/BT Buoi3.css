@@ -1,0 +1,19 @@
+.bang-diem {
+    width: 100%;
+    border-collapse: collapse;
+    font-family:'Times New Roman', Times, serif;
+    margin: 10px auto;
+}
+.bang-diem th, .bang-diem td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.tieu-de-xanh thead th {
+    background-color: #0000FF;
+    color: white; 
+    font-weight: bold;
+}
+.bang-diem.hieu-ung-di-chuot tbody tr:hover {
+    background-color: #8ec7f0; 
+}

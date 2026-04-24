@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form thông tin sinh viên</h1>
+    <form action="">
+        <label for="username">Họ và tên:</label>
+        <input type="text" placeholder="Nhập tên của bạn" id="username" name="username"><br>
+        <label for="day birth">Ngày sinh:</label>
+        <input type="date" placeholder="Ngày sinh" id="day birth" name="day birth" required><br>
+        <label for="radio">Giới tính:</label>
+        <label for="male">Nam</label>
+        <input type="radio" placeholder ="Giới tính"id="male" name="gender" value="male">
+        <label for="female">Nữ</label>
+        <input type="radio" placeholder ="Giới tính"id="female" name="gender" value="female"> <br>
+        <label>Sở thích:</label>
+        <label for="docsach">Đọc sách</label>
+        <input type="checkbox" id="docsach" name="sothich" value="Đọc sách">
+        <label for="thethao">Thể thao</label>
+        <input type="checkbox" id="thethao" name="sothich" value="Thể thao">
+        <label for="amnhac">Âm nhạc</label>
+        <input type="checkbox" id="amnhac" name="sothich" value="Âm nhạc"><br>
+        <label for="quequan">Quê quán:</label><br>
+        <select name="quequan" id="quequan">
+            <option value="">--Chọn quê quán--</option>
+            <option value="hanoi">Hà Nội</option>
+            <option value="hcm">Hồ Chí Minh</option>
+            <option value="danang">Đà Nẵng</option>
+            <option value="hue">Huế</option>
+        </select><br>
+        <label for="textarea">Ghi chú:</label>
+        <textarea placeholder="Ghi chú của bạn" id="textarea" name="textarea"></textarea>
+    </form>
+</body>
+</html>
